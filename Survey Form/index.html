@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body>
+  <div class="container">
+
+<!--Title and Description-->
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Customer Feedback On The Product</p>
+  </header>
+
+<!--Form-->
+  <Form id="survey-form" action="#" method="POST">
+
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input class="form-control" type="text" id="name"  name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="mail">E-Mail</label>
+      <input class="form-control" type="email" id="email"  name="email" placeholder="Enter your Email" required>
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input class="form-control" type="number" id="number" name="number" min="10" max="99" placeholder="Age">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender (optional)</label>
+      <select class="form-control" id="dropdown" name="gender" id="gender">
+        <option value="">--Choose an option--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Which of the following words would you use to describe our product?</p>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="buggy">Buggy
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="fine">Fine
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="great">Great
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="buggy">Life-Saving
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>How well does our product meet your needs</p>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="badly">Badly
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="fine">Fine
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="well">Well
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="prefer" value="very-well">Very Well
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend our product to a friend?</p>
+      <label for="">
+        <input class="input-radio" type="radio" name="friend-recommend" value="definitely" checked>Definitely
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="friend-recommend" value="maybe" checked>Maybe
+      </label>
+      <label for="">
+        <input class="input-radio" type="radio" name="friend-recommend" value="not-sure" checked>Not sure
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Which 3 features are the most valuable to you?</p>
+      <label for="">
+        <input class="input-checkbox" type="checkbox" name="most-valuable" value="custom-responses">Custom responses
+      </label>
+      <label for="">
+        <input class="input-checkbox" type="checkbox" name="monst-valuable" value="design">Design
+      </label>
+      <label for="">
+        <input class="input-checkbox" type="checkbox" name="monst-valuable" value="easy-nav">Easy Navigation
+      </label>
+      <label for="">
+        <input class="input-checkbox" type="checkbox" name="monst-valuable" value="user-exp">User Experience
+      </label>
+      <label for="">
+        <input class="input-checkbox" type="checkbox" name="monst-valuable" value="custom-int">Custom Integrations
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>If you could change just one thing about our product, what would it be?</p>
+      <textarea class="input-textarea" name="suggestions" id="form-textarea">Enter your comment here...</textarea>
+    </div>
+
+    <div class="form-group">
+      <button class="submit-button" type="submit" id="submit">Submit</button>
+    </div>
+
+  </Form>
+  </div>
+  
+</body>
+</html>
